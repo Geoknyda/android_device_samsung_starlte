@@ -43,6 +43,28 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.PDA=G960FXXUCFTK1
-
+    #
+    # BATTERY SAVER
+    #
+    wifi.supplicant_scan_interval=300
+    pm.sleep_mode=1
+    power.saving.mode=1
+    ro.ril.disable.power.collapse=0
+    ro.config.hw_power_saving=1
+    power_supply.wakeup=enable
+    ro.mot.eri.losalert.delay=1000
+    ro.config.hw_fast_dormancy=1
+    debug.performance.tuning=1
+    debug.composition.type=hw
+    debug.sf.hw=1
+    profiler.force_disable_ulog=true
+    profiler.force_disable_err_rpt=true
+    profiler.force_disable_err_rpt=1
+    profiler.force_disable_ulog=1
+    ro.vold.umsdirtyratio=20
+    dalvik.vm.checkjni=false
+    dalvik.vm.execution-mode=int:jit
+    video.accelerate.hw=1
+    
 PRODUCT_PROPERTY_OVERRIDES += \
     lineage.updater.uri=https://raw.githubusercontent.com/Geoknyda/OTA/lineage-18.1/starlte.json
